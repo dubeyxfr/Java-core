@@ -5,7 +5,7 @@ public class DecimalToBinary {
         Scanner input = new Scanner(System.in);
 
         // Get decimal number from user
-        System.out.print("Enter a decimal number (e.g., 10.625): ");
+        System.out.print("Enter a decimal number: ");
         double num = input.nextDouble();
 
         // Separate integer and fractional part
