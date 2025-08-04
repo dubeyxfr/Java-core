@@ -27,6 +27,7 @@ public class Armstrong {
         }
 
         return sum == original;
+
     }
 
     public static int power(int base, int exp) {
