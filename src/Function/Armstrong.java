@@ -35,6 +35,7 @@ public class Armstrong {
             result *= base;
         }
         return result;
+
     }
 
     public static int countDigits(int num) {
