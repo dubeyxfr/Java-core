@@ -6,9 +6,10 @@ public class Area__circle {
         System.out.println(" ");
         System.out.print("Enter the Value of the Radius: ");
         double r = input.nextDouble();
-        double area = Math.PI * r*r;
+        double area = Math.PI *r*r;
         System.out.println("Area of the circle are: " + area);
 
 
     }
 }
+
