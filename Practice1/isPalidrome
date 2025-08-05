@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    static boolean isPalindrome(int n) {
+        int rev = 0, orig = n;
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        return rev == orig;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println(isPalindrome(num) ? "Palindrome" : "Not Palindrome");
+    }
+}
