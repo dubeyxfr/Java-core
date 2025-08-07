@@ -5,7 +5,7 @@ public class ch1_SumArgElements {
         System.out.println("Welcome to the SumArgElemets");
         int[] numArray = ArrayUtility.intputArray();
         long Sum = sum(numArray);
-        int avg = average(numArray);
+        double avg = average(numArray);
         System.out.println("sum of the Array: " +Sum);
         System.out.println("Average of the Array: " +avg);
 
@@ -25,7 +25,7 @@ public class ch1_SumArgElements {
         return sum;
     }
     public static int average(int[] numArray){
-      long sum = sum(numArray);
+      double sum = sum(numArray);
       return (int) (sum/numArray.length);
     }
 }
