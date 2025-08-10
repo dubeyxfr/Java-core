@@ -17,12 +17,13 @@ public class ArryAdds {
         if (arr1.length != arr2.length) {
             System.out.println("Error: Both arrays must have the same length!");
             return;
+
         }
 
         // Create result array
         int[] adds = new int[arr1.length];
 
-        // Add elements
+        // Add elements of the
         for (int i = 0; i < arr1.length; i++) {
             adds[i] = arr1[i] + arr2[i];
         }
