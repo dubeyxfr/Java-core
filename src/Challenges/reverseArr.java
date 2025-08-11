@@ -11,11 +11,11 @@ public class reverseArr {
 
     }
     public static void reverse (int[] arr){
-        int i = 0;
-        while (i < arr.length /2){
-            int swap = arr[i];
-            arr [i] = arr[(arr.length - 1) -i];
-            arr[(arr.length - 1) -i] = swap;
+        int i = 0;// insilisation of loop
+        while (i < arr.length /2){ //its use for start the loop for only for the half of the Swap the num
+            int swap = arr[i];//swaping the number
+            arr [i] = arr[(arr.length - 1) -i]; // between part of the swaping
+            arr[(arr.length - 1) -i] = swap; // last valuee swap to first position
             i++;
         }
 
