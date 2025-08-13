@@ -6,7 +6,7 @@ public class reverseArr {
         int[] numarr = ArrayUtility.intputArray();
         reverse(numarr);
         System.out.println("Your new array are...");
-        ArrayUtility.displayarr(numarr);
+        ArrayUtility.displayarr(numarr);//display the Reverse array
 
 
     }
