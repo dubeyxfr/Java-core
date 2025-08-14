@@ -6,10 +6,10 @@ class ch9_Search2Darr {
     public static void main(String[] args) {
         System.out.println("Welcome to the 2d Array Search ");
         Scanner input = new Scanner(System.in);
-        int [][] newArr = ArrayUtility.intput2DArray();
+        int [][] newArr = ArrayUtility.intput2DArray();//input funstion of the 2d Array
         System.out.print("Enter the Num which you want to check: ");
-        int num = input.nextInt();
-        boolean isfound = search(newArr,num);
+        int num = input.nextInt(); //input of the Num
+        boolean isfound = search(newArr,num); //boolean of the return
         if (isfound){
             System.out.println("your Num is Found in the array ");
         }else{
@@ -20,7 +20,7 @@ class ch9_Search2Darr {
     }
     public static boolean search(int [][]newArr, int num){
         int i = 0;
-        while(i < newArr.length){
+        while(i < newArr.length){ //loop conditions
             int j = 0;
             while (j < newArr[i].length){
                 if (newArr[i][j] == num) return true;
