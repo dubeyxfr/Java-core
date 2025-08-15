@@ -15,8 +15,8 @@ public class Sumof2Darr {
         }
         int rows = numArr.length;
         int colms = numArr[0].length;
-        double size = rows * colms;
-        return sum(numArr) / size;
+        double size = rows * colms;//multiplications of the rows and columns
+        return sum(numArr) / size;//avg logic of the 2D array
     }
     public static long sum(int[][] numArr){
         int sum = 0;
@@ -24,7 +24,7 @@ public class Sumof2Darr {
         while ( i < numArr.length){
             int j = 0;
             while (j < numArr[i].length){
-                sum += numArr[i][j];
+                sum += numArr[i][j]; //logic of the adding arrays values
 
                 j++;
             }
