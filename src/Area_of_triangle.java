@@ -8,7 +8,7 @@ public class Area_of_triangle {
         int l = input.nextInt();
         System.out.print("enter the value of the breath: ");
         int b = input.nextInt();
-        int area = (int) (0.5*l*b);
+        int area = (int) (0.5*l*b);//practice
         System.out.println("The Area of the triangle are; " + area);
 
 
