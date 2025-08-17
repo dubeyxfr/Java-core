@@ -2,7 +2,7 @@ package Challenges;
 
 import java.util.Scanner;
 
-public class ArrayUtility {
+public class  ArrayUtility {
     public static int[] intputArray(){
         Scanner input = new Scanner(System.in);
         System.out.print("Please Enter the number of Elements: ");
@@ -37,7 +37,7 @@ public class ArrayUtility {
             while (j<columns){
                 System.out.print("Please Enter Element row " + (i + 1) + ", colums " + (j + 1) + " : ");
                 numArray[i][j] = input.nextInt();
-                j++;
+                j++;//increment
             }
 
             i++;
