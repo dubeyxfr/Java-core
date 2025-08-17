@@ -12,10 +12,17 @@ public class Car {
 
     //Methods of the car
     public void Driving(){
-        System.out.println("Car is Driving");
-        CurrentFuleInLitter--;
+        if (CurrentFuleInLitter <= 0){
+            System.out.println("Your car is out of fuel");
+        } else if (CurrentFuleInLitter < 5) {
+            System.out.println("Your car is in the Reserved mode, Please Refuel it ");
+            
+        }else {
+            System.out.println("Car is Driving");
+            CurrentFuleInLitter--;
+        }
     }
-    public void Fuel(float fuel){
+    public void addFuel(float fuel){
         CurrentFuleInLitter += fuel;
 
     }
