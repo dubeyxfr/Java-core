@@ -1,36 +1,60 @@
 package ObjectJava;
 
 public class Car {
-    //Properties of the Car
+    // Properties
     int noOfWheels;
     String color;
-    float MaxSpeed;
-
-    float CurrentFuleInLitter;
-
+    int maxSpeed;
+    float currentFuelInLiters;
     int noOfSeats;
+  
 
-    //Methods of the car
-    public void start (){
-        if (CurrentFuleInLitter <= 0){
-            System.out.println("Your car is out of fuel, Can not Start");
-        } else if (CurrentFuleInLitter < 5) {
-            System.out.println("Your car is in the Reserved mode, Please Refuel it ");
-        }else {
-            System.out.println("Car is Started, bruhhhhhh.....");
+    // Constructor
+    Car(String color) {
+        noOfSeats = 5;
+        noOfWheels = 4;
+        maxSpeed = 150;
+        this.color = color;
+        currentFuelInLiters = 2; // Initially empty
+    }
 
+    // Methods
+    public void start() {
+        if (currentFuelInLiters <= 0) {
+            System.out.println("Your car is out of fuel, cannot start.");
+        } else if (currentFuelInLiters < 5) {
+            System.out.println("Your car is in reserved mode, please refuel.");
+        } else {
+            System.out.println("Car is started, bruhhhhhh.....");
         }
     }
-    public void Driving(){
-        CurrentFuleInLitter--;
-        System.out.println("Car is Driving...");
-    }
-    public void addFuel(float fuel){
-        CurrentFuleInLitter += fuel;
-    }
-    public float GetCurretFuelLevel(){
-        return CurrentFuleInLitter;
+
+    public void driving() {
+        if (currentFuelInLiters > 0) {
+            currentFuelInLiters--;
+            System.out.println("Car is driving...");
+        } else {
+            System.out.println("Cannot drive, no fuel left!");
+        }
     }
 
+    public void addFuel(float fuel) {
+        currentFuelInLiters += fuel;
+    }
+
+    public float getCurrentFuelLevel() {
+        return currentFuelInLiters;
+    }
+
+    public void getCarInfo() {
+        System.out.println("Car Information:");
+        System.out.println("Color: " + color);
+        System.out.println("Number of Wheels: " + noOfWheels);
+        System.out.println("Maximum Speed: " + maxSpeed + " km/h");
+        System.out.println("Number of Seats: " + noOfSeats);
+        System.out.println("Current Fuel Level: " + currentFuelInLiters + " liters");
+    }
 }
+
+
 
