@@ -5,7 +5,10 @@ package ObjectJava;
 public class Drive {
     public static void main(String[] args) {
         //
+
         Car myCar = new Car("red");
+        Car Thar = new Car();
+
 
 //
 //        myCar.addFuel(6);
@@ -22,6 +25,7 @@ public class Drive {
       myCar.getCarInfo();
       myCar.start();
       myCar.driving();
+      Thar.getCarInfo();
 
 
     }

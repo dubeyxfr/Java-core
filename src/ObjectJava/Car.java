@@ -9,7 +9,7 @@ public class Car {
     int noOfSeats;
   
 
-    // Constructor
+    // Constructor with perameterized
     Car(String color) {
         noOfSeats = 5;
         noOfWheels = 4;
@@ -17,6 +17,15 @@ public class Car {
         this.color = color;
         currentFuelInLiters = 2; // Initially empty
     }
+    //constructor with default
+    Car() {
+        noOfSeats = 5;
+        noOfWheels = 4;
+        maxSpeed = 150;
+        color = "Black";
+        currentFuelInLiters = 2; // Initially empty
+    }
+
 
     // Methods
     public void start() {
