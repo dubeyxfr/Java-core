@@ -17,13 +17,9 @@ public class Car {
         this.color = color;
         currentFuelInLiters = 2; // Initially empty
     }
-    //constructor with default
+    //constructor with default providing in the main constructor
     Car() {
-        noOfSeats = 5;
-        noOfWheels = 4;
-        maxSpeed = 150;
-        color = "Black";
-        currentFuelInLiters = 2; // Initially empty
+     this ("Black");
     }
 
 
