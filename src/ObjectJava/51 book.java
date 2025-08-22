@@ -42,7 +42,7 @@ class Book {
             System.out.println("This book is already borrowed from the library.");
         } else {
             this.isBorrowed = true;
-            System.out.println("Enjoy the book!");
+            System.out.println("Enjoy the book name = " +this.title);
         }
     }
 
@@ -52,7 +52,7 @@ class Book {
             this.isBorrowed = false;
             System.out.println("Hope you enjoyed the book. Please leave a review...");
         } else {
-            System.out.println("This book is already in the library.");
+            System.out.println(this.title +" book is already in the library ");
         }
     }
 
@@ -77,6 +77,7 @@ class Book {
         bookDesign.BorrowedBook();
         bookDesign.ReturnBook();
         bookDesign.ReturnBook();
+        myBook.ReturnBook();
 
     }
 }
