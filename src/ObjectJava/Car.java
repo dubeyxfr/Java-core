@@ -1,6 +1,15 @@
 package ObjectJava;
 
 public class Car {
+    static int noOfCarSold;
+    static {
+        noOfCarSold = 0;
+        System.out.println("I am in Static code");
+    }
+    {
+        noOfCarSold++;
+        System.out.println("i am in initlization code ");
+    }
     // Properties
     int noOfWheels;
     String color;
