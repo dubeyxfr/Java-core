@@ -78,6 +78,7 @@ class Book {
         bookDesign.ReturnBook();
         bookDesign.ReturnBook();
         myBook.ReturnBook();
+        bookDesign.displayInfo();
 
     }
 }
