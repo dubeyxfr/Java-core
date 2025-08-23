@@ -14,7 +14,7 @@ class CourseClass {
         this.students = new String[maxCapacity];
     }
 
-    // Add a student
+    // Add a  student
     void enrollStudent(String studentName) {
         if (enrollments >= maxCapacity) {
             System.out.println("Course is full!");
@@ -50,7 +50,7 @@ class CourseClass {
         javaCourse.enrollStudent("Bob");
         javaCourse.showStudents();
 
-        javaCourse.unEnrollStudent();
+        javaCourse.unEnrollStudent();//
         javaCourse.showStudents();
     }
 }
