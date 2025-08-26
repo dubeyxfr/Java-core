@@ -11,11 +11,11 @@ public class Car {
         System.out.println("i am in initlization code ");
     }
     // Properties
-    int noOfWheels;
-    String color;
-    int maxSpeed;
-    float currentFuelInLiters;
-    int noOfSeats;
+    int noOfWheels; //instance variable
+    String color;   //instance variable
+    int maxSpeed;//instance variable
+    float currentFuelInLiters; //instance variable
+    int noOfSeats;  //instance variable
   
 
     // Constructor with perameterized
@@ -33,7 +33,7 @@ public class Car {
 
 
     // Methods
-    public void start() {
+    public void start() {  //local variable
         if (currentFuelInLiters <= 0) {
             System.out.println("Your car is out of fuel, cannot start.");
         } else if (currentFuelInLiters < 5) {
