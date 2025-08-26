@@ -48,7 +48,7 @@ class CafeShop {
     }
 
     public static void main(String[] args) {
-        CafeShop myCafe = new CafeShop("Java Beans Cafe");
+        cafeShop myCafe = new cafeShop("Java Beans Cafe");
 
         myCafe.addCustomer("Alice");
         myCafe.addCustomer("Bob");
