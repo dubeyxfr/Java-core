@@ -2,7 +2,7 @@ package Control_Statments;
 
 import java.util.Scanner;
 
-public class ternaryOddEven {
+class ternaryOddEven {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the odd even FInder\n");
