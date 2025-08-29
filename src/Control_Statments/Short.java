@@ -12,8 +12,9 @@ import java.util.Scanner;
             System.out.print("Enter second number: ");
             int b = sc.nextInt();
 
-            int min = Math.min(a, b);  // Built-in method
+            int min = Math.min(a, b);  // Built in method ->    by maths
             System.out.println(min + " is the minimum number");
+
         }
     }
 
