@@ -9,6 +9,6 @@ class StudentScoreTernary {
         System.out.print("Enter The Student Marks : ");
         int marks = input.nextInt();
         String category = marks > 80 ? "high" : (marks > 50 ? "moderate" : "lower");
-        System.out.println("Your Marks category is " +category);
+        System.out.println("Your Marks category is " +category);// ternary
     }
 }
