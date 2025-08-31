@@ -9,5 +9,12 @@ public class BreakAndContinue {
             System.out.print(i + " ");
         }
         System.out.println("\nOut of loop");
+        System.out.println("Continue Statement in loop\n");
+        for (int j = 0; j <= 10 ;j++){
+            if (j == 7){
+                continue;
+            }
+            System.out.print(j + " ");
+        }
     }
 }
