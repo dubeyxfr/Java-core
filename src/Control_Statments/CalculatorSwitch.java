@@ -12,7 +12,8 @@ public class CalculatorSwitch {
         int num2 = input.nextInt();
         System.out.print("Enter the Operator to Perform: ");
         String operator = input.next();
-        int result = switch (operator) {
+        int result = switch (operator)  //calculator by Using the Ternary Operators
+        {
             case "+" -> num1 + num2;
             case "-" -> num1 - num2;
             case "*" -> num1 * num2;
