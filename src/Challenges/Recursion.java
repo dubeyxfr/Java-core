@@ -13,6 +13,7 @@ public class Recursion {
 
     }
     public static long factorial (int num){
+        System.out.println("your Fcatorial call: " +num);
         if (num == 1){
             return  1;
         }
