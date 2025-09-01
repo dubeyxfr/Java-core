@@ -9,7 +9,7 @@ public class PassWordChecker {
         String password;
         do {
             System.out.print("Enter your Password: ");
-            password = input.next();
+            password = input.next();//input by user
         }while(!isVaildPassword(password));
         System.out.println("Thanks for enter correct Password");
 
