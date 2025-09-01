@@ -8,7 +8,7 @@ public class NumgusseGame {
         int num = 5 , gusse;
         System.out.println("Welcome to Number Guessing game");
         do {
-            System.out.print("please enter the guess bwtween 1 to 10 : ");
+            System.out.print("please enter the guess between 1 to 10 : ");
             gusse = input.nextInt();
         }
         while(gusse != num);
