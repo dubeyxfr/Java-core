@@ -11,8 +11,8 @@ public class maxArrSearch {
 
         int max = Integer.MIN_VALUE;
         for (int num: arr){
-            if (max < num ){
-                max= num;
+            if (max < num ){//
+                max= num;//
 
             }
         }
