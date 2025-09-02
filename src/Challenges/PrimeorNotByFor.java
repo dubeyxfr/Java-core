@@ -1,0 +1,22 @@
+package Challenges;
+
+import java.util.Scanner;
+
+public class PrimeorNotByFor {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to Check prime or Not\n");
+        System.out.print("Enter the Number: ");
+        int num = input.nextInt();
+        System.out.println("Your number is " + (isPrime(num) ? "Prime" : "not prime"));
+
+    }
+    public static boolean isPrime(int num){
+        for (int i = 2;i < num ;i++){
+            if (num % i == 0){
+            return false;
+            }
+        }
+        return true;
+    }
+}
