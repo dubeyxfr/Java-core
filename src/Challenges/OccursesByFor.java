@@ -12,12 +12,14 @@ public class OccursesByFor {
         int occ = countOccurrenses(nums,element);
 
     }
-    public static int countOccurrenses(int nums, int element){
+    public static int countOccurrenses(int[] nums, int element){
         int occ = 0;
-        for (int num : nums )
-            if (nums == element){
+        for (int num : nums) {
+            if (num == element) {
                 occ++;
             }
+        }
         return occ;
     }
 }
+
