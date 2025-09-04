@@ -9,7 +9,7 @@ public class ExitonExit {
             System.out.print("Enter your Command: ");
             String command = input.next();
             if (command.equals("exit")){
-                break;
+                break;//break in
 
             }
 
