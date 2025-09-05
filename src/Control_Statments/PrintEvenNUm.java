@@ -11,7 +11,7 @@ public class PrintEvenNUm {
             if (i % 2 == 1){
                 continue;
             }
-            System.out.print(i + " ");
+            System.out.print(i + " ");///
         }
 
 
