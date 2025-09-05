@@ -12,9 +12,9 @@ public class SumAllPositiveNum {
         int sum = 0;
         for (int num : numArr){
             if (num < 0){
-                continue;
+                continue; //
             }
-            sum += num;
+            sum += num; //
 
 
 
