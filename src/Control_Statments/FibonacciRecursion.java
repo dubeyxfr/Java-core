@@ -8,7 +8,9 @@ public class FibonacciRecursion {
         System.out.println("Welcome to the Fibonacci Series By recursion\n");
         System.out.print("Enter the Element which you want to check: ");
         int count = input.nextInt();
-        System.out.println("Your fibonacci Series is " + count + " is " + fibonacci(count));
+        for (int i = 1; i <= count ; i++) {
+            System.out.println("Your fibonacci Series is " + count + " is " + fibonacci(count));
+        }
 
 
 
