@@ -24,5 +24,7 @@ public class RecursionPalindrome {
         String newStr = str.substring(1,lastPos);
         return isPalindrome(newStr);
 
+
     }
+
 }
