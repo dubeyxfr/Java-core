@@ -25,7 +25,7 @@ class Circle {
 
     @Override
     public String toString() {
-        return "Circle " +"Radius = " + radius +"\ngetCircumference = " + getCircumference() + "\ngetArea = " +getArea();
+        return "Circle " +"Radius = " + radius +"\ngetCircumference = " + getCircumference() + "\nfgetArea = " +getArea();
     }
 
     // Main method
