@@ -7,8 +7,10 @@ public class PMath {
 //        System.out.println(Math.floor(12.07));
 //        System.out.println(Math.round(12.04));
 //        System.out.println(Math.random());
-        long random = Math.round(Math.random());
-        System.out.println("your num is " + random);
+        for (int i = 1 ; i < 10; i++ ) {
+            long random = Math.round(Math.random() * 100);
+            System.out.println("your num is " + random);
+        }
 
     }
 }
