@@ -14,13 +14,20 @@ public class Car {
         ModelNumber = modelNumber;
         MaxSpeed = maxSpeed;
     }
+
+    @Override
     public String toString() {
-        return "My name is: " +carName;
+        return "Car = " +
+                "ModelNumber='" + ModelNumber + '\'' +
+                ", carName='" + carName + '\'' +
+                ", noOfGates=" + noOfGates +
+                ", nofWheels=" + nofWheels +
+                '.';
     }
 
     public static void main(String[] args) {
         Car swift = new Car(4, 4,"Swift", "SW874",120);
-        System.out.println(swift.toString());
+        System.out.println(swift);
 
 
 
