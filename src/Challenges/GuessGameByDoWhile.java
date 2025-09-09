@@ -35,9 +35,9 @@ public class GuessGameByDoWhile {
             if (result == 0) {
                 System.out.println("✅ Congrats! Your guess is correct.");
             } else if (result < 0) {
-                System.out.println("⬆ Please guess a higher number.");
+                System.out.println("⬆️ Please guess a higher number.");
             } else {
-                System.out.println("⬇ Please guess a lower number.");
+                System.out.println("⬇️ Please guess a lower number.");
             }
 
         } while (result != 0);
