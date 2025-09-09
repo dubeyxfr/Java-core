@@ -6,10 +6,10 @@ public class GuessingGame {
 
     // Method to generate a random number between 1 and 100
     int generateRandomNumber() {
-        // Math.random() * 100 gives a double between 0.0 and 99.99...
-        // (int) casts it to an integer, truncating the decimal (0 to 99)
-        // + 1 shifts the range to 1 to 100
-        return (int) (Math.random() * 100) + 1;
+        // Math.random() * 10 gives a double between 0.0 and 9.99...
+        // (int) casts it to an integer, truncating the decimal (0 to 9)
+        // + 1 shifts the range to 1 to 10
+        return (int) (Math.random() * 10) + 1;
     }
 
     public static void main(String[] args) {
