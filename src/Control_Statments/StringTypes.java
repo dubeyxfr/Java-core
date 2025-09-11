@@ -15,6 +15,6 @@ public class StringTypes {
         // StringBuffer (Mutable + Thread-Safe)
         StringBuffer sbf = new StringBuffer("Java");
         sbf.append(" Rocks");
-        System.out.println("StringBuffer: " + sbf); // Java Rocks
+        System.out.println("StringBuffer: " + sbf); // Java Rocks//
     }
 }
