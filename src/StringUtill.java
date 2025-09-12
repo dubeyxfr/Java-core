@@ -15,7 +15,7 @@ public final class StringUtill {
     // Convert sentence to Title Case ("hello world" -> "Hello World")
     public static String toTitleCase(String s) {
         if (s == null) return null;
-        return Arrays.stream(s.split("\\s+"))
+        return Arrays.stream(s.split("\\s+"))//
                 .map(part -> {
                     if (part.isEmpty()) return part;
                     return part.substring(0, 1).toUpperCase() + part.substring(1).toLowerCase();
