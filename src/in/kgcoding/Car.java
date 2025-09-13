@@ -6,13 +6,5 @@ public class Car {
     private double FuelLevel;
     private long CostOfPurchase;
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "color='" + color + '\'' +
-                ", model='" + model + '\'' +
-                ", FuelLevel=" + FuelLevel +
-                ", CostOfPurchase=" + CostOfPurchase +
-                '}';
-    }
+
 }
