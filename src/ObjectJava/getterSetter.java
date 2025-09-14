@@ -12,7 +12,7 @@ public class getterSetter {
         public String getModel(){ //
             return model;
         }
-         public Car(String color, String model, double fuelLevel, long costOfPurchase) {
+         public void Car(String color, String model, double fuelLevel, long costOfPurchase) {
         this.color = color;
         this.model = model;
         FuelLevel = fuelLevel;

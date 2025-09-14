@@ -15,7 +15,14 @@ public class Car {
         this.model = model;
         FuelLevel = fuelLevel;
         CostOfPurchase = costOfPurchase;
+        if (color == "yellow"){
+            System.out.println("bkl nhi hai yha color");
+        }else {
+            this.color = color;
+        }
+
     }
+
 
     @Override
     public String toString() {
