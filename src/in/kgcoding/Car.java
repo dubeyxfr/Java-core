@@ -5,7 +5,11 @@ public class Car {
     public String model;
     double FuelLevel;
     long CostOfPurchase;
+    long TaxOnCar;
 
+    Default(){
+
+    }
     public Car() {
     }
 
