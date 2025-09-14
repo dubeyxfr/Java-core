@@ -18,11 +18,11 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Car -> " +
                 "color='" + color + '\'' +
                 ", model='" + model + '\'' +
                 ", FuelLevel=" + FuelLevel +
                 ", CostOfPurchase=" + CostOfPurchase +
-                '}';
+                '.';
     }
 }
