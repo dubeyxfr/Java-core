@@ -2,10 +2,10 @@ package in.kgcoding.inheritance;
 
 public class TwoWheelers extends Vehicle {
     TwoWheelers (){
-        noOfTires = 2;
+        setNoOfTires(4);
     }
     public void balance (){
-        System.out.printf("I am Balancing on %d tires...",noOfTires);
+        System.out.println("I am Balancing on tires...");
     }
 
 }
