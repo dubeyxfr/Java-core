@@ -12,6 +12,17 @@ public class Person {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Person)){
+            return false;
+        }
+        Person per = (Person) obj;
+        return per.name.equals(name) &&
+                per.age.equals(age) &&
+                per.id.equals(id);
+    }
+
+    @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
