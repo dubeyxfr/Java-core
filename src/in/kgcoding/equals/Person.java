@@ -1,4 +1,4 @@
-package in.kgcoding;
+package in.kgcoding.equals;
 
 public class Person {
     private String name;
