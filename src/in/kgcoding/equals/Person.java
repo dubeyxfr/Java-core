@@ -1,5 +1,7 @@
 package in.kgcoding.equals;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private String age;
@@ -9,6 +11,11 @@ public class Person {
         this.name = name;
         this.age = age;
         this.id = id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, id);
     }
 
     @Override
