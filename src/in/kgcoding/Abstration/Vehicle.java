@@ -1,6 +1,6 @@
 package in.kgcoding.Abstration;
 
-public class Vehicle {
+public abstract class Vehicle {
     private int noOfTires;
 
     public Vehicle(int noOfTires) {
@@ -13,5 +13,8 @@ public class Vehicle {
 
     public void setNoOfTires(int noOfTires) {
         this.noOfTires = noOfTires;
+    }
+    public void commute() {
+        System.out.println("Going.......");
     }
 }
