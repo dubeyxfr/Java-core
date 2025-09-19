@@ -7,6 +7,10 @@ public class Car extends Vehicle {
     public void makeStartSound() {
         System.out.println("vroom....");
     }
+    @Override
+    public void getSetGo() {
+        System.out.println("Going to Place....");
+    }
 
     public Car(int noOfTires) {
         super(4);

@@ -1,8 +1,9 @@
 package in.kgcoding.Abstration;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Transport {
     private int noOfTires;
     public abstract void makeStartSound();
+
 
     public Vehicle(int noOfTires) {
         this.noOfTires = noOfTires;
