@@ -2,6 +2,7 @@ package in.kgcoding.Abstration;
 
 public abstract class Vehicle {
     private int noOfTires;
+    public abstract void makeStartSound();
 
     public Vehicle(int noOfTires) {
         this.noOfTires = noOfTires;
