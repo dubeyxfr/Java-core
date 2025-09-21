@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class PrimeorNotByFor {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Welcome to Check prime or Not\n");
+        System.out.println("Welcome to Check BasicsCode.prime or Not\n");
         System.out.print("Enter the Number: ");
         int num = input.nextInt();
-        System.out.println("Your number is " + (isPrime(num) ? "Prime" : "not prime"));
+        System.out.println("Your number is " + (isPrime(num) ? "Prime" : "not BasicsCode.prime"));
 
     }
     public static boolean isPrime(int num){

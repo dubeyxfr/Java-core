@@ -2,7 +2,7 @@ package Function;
 
 public class FunctionPatterns {
     public static void main(String[] args) {
-        System.out.println("patterns printing by using the Function");
+        System.out.println("BasicsCode.patterns printing by using the Function");
         PrintSecondPattern();
         PrintFirdtPattern();
     }

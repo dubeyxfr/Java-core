@@ -9,6 +9,6 @@ public class ArrayToString {
         for (String str : arr) {
             sb.append(str).append(" ");
         }
-        System.out.println(sb);
+        System.out.println(sb);//
     }
 }

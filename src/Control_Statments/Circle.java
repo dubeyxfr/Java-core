@@ -28,7 +28,7 @@ class Circle {
         return "Circle " +"Radius = " + radius +"\ngetCircumference = " + getCircumference() + "\nfgetArea = " +getArea();
     }
 
-    // Main method
+    // BasicsCode.Main method
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the Circle Program\n");
