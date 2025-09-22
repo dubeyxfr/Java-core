@@ -1,5 +1,23 @@
 package in.kgcoding.Polymorphis;
 
-public interface Vehicle {
-    void Start();
+public abstract class Vehicle {
+    private int noOfTires;
+
+
+    Vehicle() {
+        this.noOfTires = 0;
+    }
+
+    Vehicle(int noOfTires) {
+        this.noOfTires = noOfTires;
+    }
+
+    public int getNoOfTires() {
+        return this.noOfTires;
+    }
+
+    public abstract void start();
+
+    // abstract method - iska body nahi hota
+    public abstract void Start();
 }

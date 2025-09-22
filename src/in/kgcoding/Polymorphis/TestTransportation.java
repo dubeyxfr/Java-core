@@ -2,27 +2,33 @@ package in.kgcoding.Polymorphis;
 
 public class TestTransportation {
     public static void main(String[] args) {
-        Car car = new Car();
+        Car car = new Car(4);
+
         Vehicle v = new Vehicle() {
+            @Override
+            public void start() {
+                System.out.println("Plane is going to taking  Off ");
+            }
+
             @Override
             public void Start() {
                 System.out.println("never");
             }
         };
 
-        Vehicle Vcar = new Car(); // here dont need the type casting
+        Vehicle Vcar = new Car(4); // ✅ polymorphism: Vehicle reference, Car object
 
         Plane p = new Plane();
-        // here we need ot type casting for the error
-        Object ob = new Car();//we can do this with the default object
-        StartCast(car);
-        StartCast(p);
 
+        Object ob = new Car(4); // ✅ sab kuch Object ka child hai
+
+        StartCast(car); // ✅ Car object pass hua
+        StartCast(p);   // ❌ Yaha problem hogi
     }
-    public static void StartCast(Vehicle veh){
-        Car cVehicle = (Car) veh;
+
+    public static void StartCast(Vehicle veh) {
+        Car cVehicle = (Car) veh;  // ❌ Dangerous casting
         cVehicle.noOfDoors();
         veh.Start();
-
     }
 }
