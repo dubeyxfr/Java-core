@@ -3,11 +3,15 @@ package in.kgcoding.Polymorphis;
 public class TestTransportation {
     public static void main(String[] args) {
         Car car = new Car();
-        Vehicle v = new Vehicle();
+        Vehicle v = new Vehicle() {
+            @Override
+            public void Start() {
+                System.out.println("never");
+            }
+        };
 
         Vehicle Vcar = new Car(); // here dont need the type casting
 
-        Car vCar = (Car) new Vehicle();
         Plane p = new Plane();
         // here we need ot type casting for the error
         Object ob = new Car();//we can do this with the default object
