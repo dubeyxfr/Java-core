@@ -1,8 +1,8 @@
-package in.kgcoding.Polymorphis;
+package in.kgcoding.polymorphism;
 
 public abstract class Vehicle {
-    private int noOfTires;
 
+    private int noOfTires;
 
     Vehicle() {
         this.noOfTires = 0;
@@ -16,8 +16,7 @@ public abstract class Vehicle {
         return this.noOfTires;
     }
 
-    public abstract void start();
-
-    // abstract method - iska body nahi hota
-    public abstract void Start();
+    public void start() {
+        System.out.println("Vehicle is starting...");
+    }
 }
