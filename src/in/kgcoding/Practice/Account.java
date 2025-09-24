@@ -1,7 +1,7 @@
 package in.kgcoding.Practice;
 
 public class Account {
-    int AccountNUmber;
+    private int AccountNUmber;
     private int balance;
 
     public Account(int accountNUmber, int balance) {
