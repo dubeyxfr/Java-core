@@ -12,7 +12,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        Calculator cal = new Calculator();//
+        Calculator cal = new Calculator();//ki tu  h ki nhii
         System.out.println("2 integer " +cal.add(12,3));//
         System.out.println("3 integer " +cal.add(12,23,23));//
         System.out.println("double values " +cal.add(12.3,13.4));//
