@@ -11,6 +11,6 @@ public class calculator {
         System.out.print("Enter the Second Number: ");
         int Second = input.nextInt();
         int result = First / Second;
-        System.out.printf("Result is %d" ,result);
+        System.out.printf("Result is %d" ,result);//result
     }
 }
