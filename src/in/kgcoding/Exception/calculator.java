@@ -10,7 +10,12 @@ public class calculator {
         int First = input.nextInt();
         System.out.print("Enter the Second Number: ");
         int Second = input.nextInt();
-        int result = First / Second;
-        System.out.printf("Result is %d" ,result);//result
+        try {
+            int result = First / Second;
+            System.out.printf("Result is %d", result);//result
+        } catch (ArithmeticException exception){
+            System.out.println("Please Enter Valid Number.");
+        }
     }
+
 }
