@@ -14,7 +14,7 @@ public class calculator {
             int result = First / Second;
             System.out.printf("Result is %d", result);//result
         } catch (ArithmeticException exception){
-            System.out.println("Please Enter Valid Number.");
+            System.out.printf(" %s,lease Enter Valid Number.",exception.getMessage());
         }
     }
 
