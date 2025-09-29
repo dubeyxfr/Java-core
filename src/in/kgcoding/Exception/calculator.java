@@ -21,6 +21,8 @@ public class calculator {
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Array went out of bounds.");
+        } catch (Throwable th) {
+            System.out.println("General Exception.");
         }
     }
 }
