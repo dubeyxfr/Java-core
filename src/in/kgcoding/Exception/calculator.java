@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class calculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Welcome to the Division Calculator/n");
+        System.out.println("Welcome to the Division Calculator\n");
         System.out.print("Enter the first Number: ");
-        int First = input.nextInt();
+        int first = input.nextInt();
+
         System.out.print("Enter the Second Number: ");
-        int Second = input.nextInt();
+        int second = input.nextInt();
+
         try {
-            int result = First / Second;
-            System.out.printf("Result is %d", result);//result
-        } catch (ArithmeticException exception){
-            System.out.printf(" %s,lease Enter Valid Number.",exception.getMessage());//get message og the exception..
+            int result = first / second;   // main operation
+            System.out.printf("Result is %d\n", result);
+        }
+        catch (ArithmeticException exc) {
+            System.out.printf("%s. Please enter a valid number.\n", exc.getMessage());
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array went out of bounds.");
         }
     }
-
 }
