@@ -4,25 +4,45 @@ import java.util.Scanner;
 
 public class calculator {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Welcome to the Division Calculator\n");
-        System.out.print("Enter the first Number: ");
-        int first = input.nextInt();
+        a();
+    }
 
-        System.out.print("Enter the Second Number: ");
+    private static void a() {
+        b();
+    }
+
+    private static void b() {
+        c();
+    }
+
+    private static void c() {
+        d();
+    }
+
+    private static void d() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to Division Calculator\n");
+        System.out.print("Please enter your two numbers: ");
+        int first = input.nextInt();
         int second = input.nextInt();
 
         try {
-            int result = first / second;   // main operation
-            System.out.printf("Result is %d\n", result);
-        }
-        catch (ArithmeticException exc) {
-            System.out.printf("%s. Please enter a valid number.\n", exc.getMessage());
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Array went out of bounds.");
+            int[] a = new int[5];
+            System.out.printf("Result is %d", a[6]);
+            a[6] = first / second;
+            System.out.printf("Result is %d", a[6]);
+        } catch (ArithmeticException exception) {
+            System.out.printf("%s, enter valid values",
+                    exception.getMessage());
         } catch (Throwable th) {
             System.out.println("General Exception.");
+            throw th;
+        } finally {
+            System.out.println("I am in finally");
         }
     }
 }
+
+
+
+
