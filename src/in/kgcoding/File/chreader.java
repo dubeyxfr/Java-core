@@ -14,10 +14,10 @@ public class chreader {
         try (FileReader reader = new FileReader(filename)) {
             int ch;
             while ((ch = reader.read()) != -1) {  // -1 means EOF
-                System.out.print((char) ch);
+                System.out.print((char) ch);//
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found!");//
+            System.out.printf("%s not found!",filename);//
         } catch (IOException e) {
             System.out.println("Error while reading: " + e.getMessage());
         }
