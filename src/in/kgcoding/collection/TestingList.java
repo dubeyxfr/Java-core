@@ -9,6 +9,11 @@ public class TestingList {
       strList.add("Prashant");
       strList.add(1," Dubey");
       strList.set(1," Singh");
+        if (strList.contains(" Singh")){
+            System.out.println("Singh Exists");
+        }else {
+            System.out.println("Not exists!");
+        }
         for (int i = 0;i < strList.size();i++){
             System.out.print(strList.get(i));
         }
