@@ -8,6 +8,7 @@ public class TestingList {
       List strList = new ArrayList();
       strList.add("Prashant");
       strList.add(1," Dubey");
+      strList.set(1," Singh");
         for (int i = 0;i < strList.size();i++){
             System.out.print(strList.get(i));
         }
