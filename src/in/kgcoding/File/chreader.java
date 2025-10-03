@@ -14,7 +14,7 @@ public class chreader {
         try (FileReader reader = new FileReader(filename)) {
             int ch;
             while ((ch = reader.read()) != -1) {  // -1 means EOF
-                System.out.print((char) ch);//
+                System.out.print((char) ch);
             }
         } catch (FileNotFoundException e) {
             System.out.printf("%s not found!",filename);//
