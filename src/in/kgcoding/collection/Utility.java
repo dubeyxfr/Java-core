@@ -7,5 +7,6 @@ public class Utility {
         for (E coll : collection){
             System.out.printf("%s ", coll.toString());
         }
+        System.out.println();
     }
 }

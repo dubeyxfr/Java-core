@@ -9,5 +9,7 @@ public class TestingQueue {
         queue.add(1);
         queue.offer(2);
         Utility.print(queue);
+        System.out.println(queue.peek());
+        System.out.println(queue.element());
     }
 }
