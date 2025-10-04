@@ -11,5 +11,7 @@ public class TestingQueue {
         Utility.print(queue);
         System.out.println(queue.peek());
         System.out.println(queue.element());
+        System.out.println(queue.remove());
+        System.out.println(queue);
     }
 }
