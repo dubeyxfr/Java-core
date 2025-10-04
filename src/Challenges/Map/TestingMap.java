@@ -1,5 +1,6 @@
 package Challenges.Map;
 
+import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,10 @@ public class TestingMap {
         map.put("Ram",50);
         System.out.println(map.size());
         System.out.println(map.get("Prashant"));
-
+        System.out.println(map.containsKey("Prashant"));
+        System.out.println(map.remove("Krish"));
+        for (String key : map.keySet()) {
+            System.out.printf(" %s : %s ,",key,map.get(key));
+        }
     }
 }
