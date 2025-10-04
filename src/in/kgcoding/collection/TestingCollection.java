@@ -15,5 +15,7 @@ public class TestingCollection {
         Utility.print(numList);
         Collections.sort(numList);
         Utility.print(numList);
+        Collections.reverse(numList);
+        Utility.print(numList);
     }
 }
