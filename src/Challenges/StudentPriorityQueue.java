@@ -15,7 +15,12 @@ public class StudentPriorityQueue {
         queue.offer(new student("Dubey",'C'));
         queue.offer(new student("Ram",'B'));
         queue.offer(new student("Shyam",'A'));
-        System.out.printf("Queue is %s" , queue);
+        System.out.printf("Queue is %s\n" , queue);
+        System.out.printf("Queue is: %s\n", queue.poll());
+        System.out.printf("Queue is: %s\n", queue.poll());
+        System.out.printf("Queue is: %s\n", queue.poll());
+        System.out.printf("Queue is: %s\n", queue.poll());
+
     }
 
 
