@@ -20,10 +20,7 @@ public class StudentPriorityQueue {
         System.out.printf("Queue is: %s\n", queue.poll());
         System.out.printf("Queue is: %s\n", queue.poll());
         System.out.printf("Queue is: %s\n", queue.poll());
-
     }
-
-
     private static class student {
         private final String name;
         private final char grade;
