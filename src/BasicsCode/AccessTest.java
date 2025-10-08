@@ -1,4 +1,4 @@
-package in.kgcoding;
+package BasicsCode;
 
 import java.util.Scanner;
 

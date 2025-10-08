@@ -1,7 +1,5 @@
 package BasicsCode;
 
-import in.kgcoding.Car;
-
 public class testModifiers {
     public static void main(String[] args) {
         Car NewCar = new Car("Blue","Bwm",12,12999);

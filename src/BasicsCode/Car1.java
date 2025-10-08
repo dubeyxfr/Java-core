@@ -1,4 +1,4 @@
-package in.kgcoding;
+package BasicsCode;
 
 public class Car1 {
     private int noOfDoors;
