@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class TwoSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the Sum of the Two Numbers....");
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
